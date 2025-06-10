@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facstock - Sistema de Gestión de Inventario y Facturación Electrónica para Argentina</title>
+    <meta name="description" content="Facstock es el sistema de gestión de inventario y facturación electrónica más completo para comercios y PYMEs de Argentina. Compatible con AFIP-ARCA. Controla tu stock, emite facturas y toma decisiones inteligentes.">
+    <meta name="keywords" content="sistema facturación argentina, software inventario PyMEs, AFIP ARCA, gestión stock, facturación electrónica, control inventario, software comercios">
+    <meta name="author" content="Facstock">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://facstock.com">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://facstock.com">
+    <meta property="og:title" content="Facstock - Sistema de Gestión de Inventario y Facturación Electrónica">
+    <meta property="og:description" content="El sistema más completo para comercios y PYMEs argentinas. Compatible con AFIP-ARCA.">
+    <meta property="og:image" content="https://facstock.com/images/facstock-logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://facstock.com">
+    <meta property="twitter:title" content="Facstock - Sistema de Gestión de Inventario y Facturación Electrónica">
+    <meta property="twitter:description" content="El sistema más completo para comercios y PYMEs argentinas. Compatible con AFIP-ARCA.">
+    <meta property="twitter:image" content="https://facstock.com/images/facstock-logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/facstock-logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/facstock-logo.png">
+    <link rel="apple-touch-icon" href="images/facstock-logo.png">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Facstock",
+      "description": "Sistema de gestión de inventario y facturación electrónica para comercios y PYMEs de Argentina",
+      "url": "https://facstock.com",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "18000",
+        "priceCurrency": "ARS",
+        "priceValidUntil": "2024-12-31"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "150"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="images/facstock-logo.png" alt="Facstock Logo" class="logo-img" width="32" height="32">
+                    <span class="logo-text">Facstock</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop" role="navigation" aria-label="Navegación principal">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#funcionalidades" class="nav-link">Funcionalidades</a>
+                    <a href="#precios" class="nav-link">Planes y Precios</a>
+                    <a href="#faq" class="nav-link">Preguntas Frecuentes</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </nav>
+
+                <!-- Desktop Actions -->
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" type="button">
+                        <i class="fas fa-sun sun-icon" aria-hidden="true"></i>
+                        <i class="fas fa-moon moon-icon" aria-hidden="true"></i>
+                    </button>
+                    <a href="#login" class="login-link">Acceso Clientes</a>
+                    <button class="btn btn-primary" type="button">¡Pruébalo Gratis!</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú" aria-expanded="false" type="button">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Menú móvil">
+            <div class="mobile-menu-content">
+                <a href="#inicio" class="mobile-nav-link">Inicio</a>
+                <a href="#funcionalidades" class="mobile-nav-link">Funcionalidades</a>
+                <a href="#precios" class="mobile-nav-link">Planes y Precios</a>
+                <a href="#faq" class="mobile-nav-link">Preguntas Frecuentes</a>
+                <a href="#contacto" class="mobile-nav-link">Contacto</a>
+                <div class="mobile-menu-footer">
+                    <div class="theme-toggle-mobile">
+                        <span>Tema</span>
+                        <button class="theme-toggle" id="themeToggleMobile" aria-label="Cambiar tema" type="button">
+                            <i class="fas fa-sun sun-icon" aria-hidden="true"></i>
+                            <i class="fas fa-moon moon-icon" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <a href="#login" class="mobile-login-link">Acceso Clientes</a>
+                    <button class="btn btn-primary btn-full" type="button">¡Pruébalo Gratis!</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section id="inicio" class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-title" class="hero-title">
+                        Facstock: Simplifica tu Negocio, 
+                        <span class="gradient-text">Potencia tus Ventas</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        El sistema de gestión de inventario y facturación electrónica para comercios y PYMEs de Argentina.
+                        Compatible con AFIP-ARCA. Controla tu stock, emite facturas y toma decisiones inteligentes.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary btn-large" type="button">
+                            ¡Pruébalo Gratis por 15 Días!
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+                        <button class="btn btn-outline btn-large" type="button">Solicitar Demo Gratuita</button>
+                    </div>
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <span>Sin costo de implementación</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <span>Soporte en español</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <span>Compatible con AFIP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits" aria-labelledby="benefits-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="benefits-title" class="section-title">¿Por qué elegir Facstock?</h2>
+                    <p class="section-subtitle">
+                        Resolvemos los problemas más comunes de gestión y facturación para negocios argentinos, 
+                        brindándote las herramientas que necesitas para crecer.
+                    </p>
+                </div>
+                <div class="benefits-grid">
+                    <article class="benefit-card">
+                        <div class="benefit-icon orange" aria-hidden="true">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="benefit-title">Ahorro de Tiempo</h3>
+                        <p class="benefit-description">Automatiza tareas repetitivas y dedica más tiempo a hacer crecer tu negocio.</p>
+                    </article>
+                    <article class="benefit-card">
+                        <div class="benefit-icon purple" aria-hidden="true">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="benefit-title">Control Total de Stock</h3>
+                        <p class="benefit-description">Mantén tu inventario actualizado en tiempo real y evita faltantes o excesos.</p>
+                    </article>
+                    <article class="benefit-card">
+                        <div class="benefit-icon orange" aria-hidden="true">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="benefit-title">Facturación AFIP Simple</h3>
+                        <p class="benefit-description">Emite facturas electrónicas cumpliendo con todas las normativas argentinas.</p>
+                    </article>
+                    <article class="benefit-card">
+                        <div class="benefit-icon purple" aria-hidden="true">
+                            <i class="fas fa-trending-up"></i>
+                        </div>
+                        <h3 class="benefit-title">Reportes Inteligentes</h3>
+                        <p class="benefit-description">Toma decisiones basadas en datos con reportes claros y detallados.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="funcionalidades" class="features" aria-labelledby="features-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="features-title" class="section-title">Funcionalidades Clave</h2>
+                    <p class="section-subtitle">
+                        Todo lo que necesitas para gestionar tu negocio de manera eficiente y profesional.
+                    </p>
+                </div>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-header">
+                            <div class="feature-icon orange" aria-hidden="true">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <h3 class="feature-title">Gestión de Inventario</h3>
+                        </div>
+                        <ul class="feature-list">
+                            <li>Control de stock en tiempo real</li>
+                            <li>Carga de productos fácil</li>
+                            <li>Alertas de stock mínimo</li>
+                            <li>Múltiples depósitos/sucursales</li>
+                        </ul>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-header">
+                            <div class="feature-icon purple" aria-hidden="true">
+                                <i class="fas fa-file-invoice"></i>
+                            </div>
+                            <h3 class="feature-title">Facturación Electrónica</h3>
+                        </div>
+                        <ul class="feature-list">
+                            <li>Facturas A, B, C, NCF compatibles con AFIP-ARCA</li>
+                            <li>Personalización de comprobantes</li>
+                            <li>Gestión de clientes y proveedores</li>
+                            <li>Integración automática con AFIP</li>
+                        </ul>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-header">
+                            <div class="feature-icon orange" aria-hidden="true">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="feature-title">Reportes y Análisis</h3>
+                        </div>
+                        <ul class="feature-list">
+                            <li>Informes de ventas y rentabilidad</li>
+                            <li>Reportes de stock y rotación</li>
+                            <li>Análisis de clientes</li>
+                            <li>Gráficos claros para decisiones</li>
+                        </ul>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-header">
+                            <div class="feature-icon purple" aria-hidden="true">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="feature-title">Otros Módulos</h3>
+                        </div>
+                        <ul class="feature-list">
+                            <li>CRM básico integrado</li>
+                            <li>Integración con Mercado Pago</li>
+                            <li>Conexión con e-commerce</li>
+                            <li>Gestión de usuarios y permisos</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="precios" class="pricing" aria-labelledby="pricing-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="pricing-title" class="section-title">Nuestros Planes</h2>
+                    <p class="section-subtitle">
+                        Elige el plan que mejor se adapte a las necesidades de tu negocio.
+                    </p>
+                </div>
+                <div class="pricing-grid">
+                    <article class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Emprendedor</h3>
+                            <p class="plan-subtitle">Básico</p>
+                            <div class="plan-price">
+                                <span class="price">$18.000</span>
+                                <span class="period">+ IVA/mes</span>
+                            </div>
+                            <p class="plan-description">Ideal para kioscos, pequeños emprendimientos, ferias</p>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Hasta 500 productos activos</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Hasta 100 comprobantes/mes</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> 1 usuario</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Reportes básicos de ventas</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Soporte por email/chat (24-48hs)</li>
+                        </ul>
+                        <button class="btn btn-outline btn-full" type="button">Elegir Plan Emprendedor</button>
+                    </article>
+
+                    <article class="pricing-card popular">
+                        <div class="popular-badge">¡El Más Popular!</div>
+                        <div class="pricing-header">
+                            <h3 class="plan-name">PYME</h3>
+                            <p class="plan-subtitle">Estándar</p>
+                            <div class="plan-price">
+                                <span class="price">$35.000</span>
+                                <span class="period">+ IVA/mes</span>
+                            </div>
+                            <p class="plan-description">Tiendas de ropa, minimercados, ferreterías medianas</p>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Hasta 5.000 productos activos</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Facturación electrónica ilimitada</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> 3 usuarios</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> 1-2 depósitos/sucursales</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Reportes avanzados completos</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Control de cuentas corrientes</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Soporte prioritario (8-12hs)</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Integración con Mercado Pago</li>
+                        </ul>
+                        <button class="btn btn-primary btn-full" type="button">Elegir Plan PYME</button>
+                    </article>
+
+                    <article class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Pro</h3>
+                            <p class="plan-subtitle">Premium</p>
+                            <div class="plan-price">
+                                <span class="price">$75.000</span>
+                                <span class="period">+ IVA/mes</span>
+                            </div>
+                            <p class="plan-description">Alto volumen, varias sucursales, distribuidoras</p>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check" aria-hidden="true"></i> 10.000+ productos (ilimitado)</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Facturación electrónica ilimitada</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Usuarios ilimitados</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Depósitos/sucursales ilimitadas</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Reportes personalizables</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> CRM básico incluido</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> API para integraciones</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Soporte 24/7 prioritario</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Capacitaciones personalizadas</li>
+                        </ul>
+                        <button class="btn btn-outline btn-full" type="button">Contactar para Plan Pro</button>
+                    </article>
+                </div>
+                <div class="pricing-note">
+                    <p><strong>Nota importante:</strong> Precios estimados y sujetos a actualización debido a la inflación. 
+                    ¡Consulta por tu plan anual y obtén un descuento!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="testimonials-title" class="section-title">Clientes Satisfechos</h2>
+                    <p class="section-subtitle">
+                        Descubre cómo Facstock está ayudando a negocios como el tuyo a crecer y prosperar.
+                    </p>
+                </div>
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <div class="testimonial-rating" aria-label="5 estrellas">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <blockquote class="testimonial-content">
+                            "Facstock me cambió la vida. Antes perdía horas haciendo facturas a mano, 
+                            ahora todo es automático y puedo enfocarme en atender a mis clientes."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <p class="author-name">Juan Pérez</p>
+                            <p class="author-business">Kiosco 'El Rincón'</p>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-rating" aria-label="5 estrellas">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <blockquote class="testimonial-content">
+                            "El control de stock es increíble. Ya no me quedo sin mercadería importante 
+                            y los reportes me ayudan a saber qué productos vender más."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <p class="author-name">María González</p>
+                            <p class="author-business">Boutique 'Estilo Único'</p>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-rating" aria-label="5 estrellas">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <blockquote class="testimonial-content">
+                            "La integración con AFIP es perfecta. Mis facturas salen automáticamente 
+                            y nunca más tuve problemas con la AFIP. Súper recomendado."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <p class="author-name">Carlos Rodríguez</p>
+                            <p class="author-business">Ferretería 'Todo Hogar'</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="faq-title" class="section-title">Preguntas Frecuentes</h2>
+                    <p class="section-subtitle">
+                        Resolvemos las dudas más comunes sobre Facstock y cómo puede ayudar a tu negocio.
+                    </p>
+                </div>
+                <div class="faq-container">
+                    <article class="faq-item">
+                        <button class="faq-question" data-faq="0" aria-expanded="false" type="button">
+                            ¿Facstock es compatible con mi tipo de negocio?
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Facstock está diseñado para todo tipo de comercios y PYMEs: kioscos, tiendas de ropa, ferreterías, minimercados, librerías, distribuidoras y más. Si vendes productos y necesitas facturar, Facstock es para ti.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" data-faq="1" aria-expanded="false" type="button">
+                            ¿Necesito conocimientos técnicos para usar Facstock?
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No, Facstock está diseñado para ser intuitivo y fácil de usar. Nuestro equipo te ayuda con la configuración inicial y ofrecemos capacitación para que puedas aprovechar al máximo todas las funcionalidades.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" data-faq="2" aria-expanded="false" type="button">
+                            ¿Cómo funciona la integración con AFIP?
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Facstock se conecta automáticamente con AFIP-ARCA para emitir facturas electrónicas válidas. Solo necesitas tus credenciales fiscales y nosotros nos encargamos del resto. Todas las facturas cumplen con la normativa argentina.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" data-faq="3" aria-expanded="false" type="button">
+                            ¿Hay costo de implementación?
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No, la implementación de Facstock es completamente gratuita. Solo pagas la suscripción mensual del plan que elijas. Nuestro equipo te ayuda con la configuración inicial sin costo adicional.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" data-faq="4" aria-expanded="false" type="button">
+                            ¿Qué tipo de soporte ofrecen?
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Ofrecemos soporte en español por email, chat y WhatsApp. Los tiempos de respuesta varían según el plan: Plan Emprendedor (24-48hs), Plan PYME (8-12hs), Plan Pro (soporte prioritario 24/7).</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" data-faq="5" aria-expanded="false" type="button">
+                            ¿Puedo cambiar de plan cuando quiera?
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, puedes cambiar tu plan en cualquier momento. Si necesitas más funcionalidades puedes hacer upgrade, y si necesitas reducir costos puedes hacer downgrade. Los cambios se aplican en el próximo período de facturación.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" data-faq="6" aria-expanded="false" type="button">
+                            ¿Mis datos están seguros?
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutamente. Utilizamos encriptación de nivel bancario y servidores seguros. Realizamos backups automáticos diarios y cumplimos con todas las normativas de protección de datos. Tu información está completamente protegida.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" data-faq="7" aria-expanded="false" type="button">
+                            ¿Puedo probar Facstock antes de pagar?
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>¡Por supuesto! Ofrecemos 15 días de prueba gratuita sin compromiso. Puedes probar todas las funcionalidades y decidir si Facstock es la solución ideal para tu negocio.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contacto" class="cta" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-title" class="cta-title">Transforma la gestión de tu negocio hoy</h2>
+                    <p class="cta-subtitle">
+                        Únete a cientos de comerciantes que ya confían en Facstock para hacer crecer sus negocios.
+                    </p>
+                    <form class="cta-form" novalidate>
+                        <label for="email-input" class="sr-only">Email comercial</label>
+                        <input type="email" id="email-input" placeholder="Tu email comercial" class="cta-input" required>
+                        <button class="btn btn-cta" type="submit">
+                            ¡Empezar Gratis!
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                    <div class="cta-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            <span>+54 11 1234-5678</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <span>hola@facstock.com.ar</span>
+                        </div>
+                    </div>
+                    <p class="cta-note">
+                        15 días de prueba gratuita • Sin costo de implementación • Soporte en español
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <img src="images/facstock-logo.png" alt="Facstock Logo" class="footer-logo" width="32" height="32">
+                        <span class="footer-brand-text">Facstock</span>
+                    </div>
+                    <p class="footer-description">
+                        El sistema de gestión de inventario y facturación electrónica más completo para comercios y PYMEs
+                        argentinas. Simplifica tu negocio y potencia tus ventas.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul class="footer-list">
+                        <li><a href="#funcionalidades" class="footer-link">Funcionalidades</a></li>
+                        <li><a href="#precios" class="footer-link">Planes y Precios</a></li>
+                        <li><a href="#faq" class="footer-link">Preguntas Frecuentes</a></li>
+                        <li><a href="#contacto" class="footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <h3 class="footer-title">Legal</h3>
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-link">Términos y Condiciones</a></li>
+                        <li><a href="#" class="footer-link">Política de Privacidad</a></li>
+                        <li><a href="#" class="footer-link">Política de Cookies</a></li>
+                        <li><a href="#" class="footer-link">Soporte Técnico</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Facstock. Todos los derechos reservados. Hecho con ❤️ para comerciantes argentinos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

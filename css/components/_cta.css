@@ -1,0 +1,65 @@
+.cta {
+  padding: clamp(4rem, 10vw, 6rem) 0;
+  background: var(--bg-secondary);
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.cta-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.cta-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+}
+
+.cta-contact {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2.5rem;
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: 500;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-size: 1.1rem;
+  border: 1px solid transparent;
+}
+
+.whatsapp-btn:hover, 
+.whatsapp-btn:focus {
+  background-color: var(--accent-hover);
+  transform: scale(1.02);
+  box-shadow: var(--shadow-lg);
+}
+
+.whatsapp-btn i {
+  font-size: 1.5rem;
+}
+
+.cta-note {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 2rem;
+}

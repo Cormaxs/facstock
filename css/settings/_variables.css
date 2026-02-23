@@ -1,0 +1,52 @@
+:root {
+  /* Professional & Minimalist Color Palette */
+  
+  /* Base */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f7;
+  --bg-muted: #fafafc;
+  
+  /* Text */
+  --text-primary: #1d1d1f;
+  --text-secondary: #6e6e73;
+  --text-muted: #a1a1a6;
+  
+  /* Borders & UI */
+  --border-color: #d2d2d7;
+  --border-light: #e6e6ea;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 20px 30px -10px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 30px 40px -15px rgba(0, 0, 0, 0.15);
+  
+  /* Accent Colors */
+  --accent-color: #0066cc;
+  --accent-hover: #004999;
+  --accent-light: #e3f2fd;
+  
+  /* Semantic colors */
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --error-color: #dc3545;
+}
+
+/* Dark theme colors */
+html.dark {
+  --bg-primary: #000000;
+  --bg-secondary: #151517;
+  --bg-muted: #1c1c1e;
+  
+  --text-primary: #f5f5f7;
+  --text-secondary: #86868b;
+  --text-muted: #6e6e73;
+  
+  --border-color: #424245;
+  --border-light: #2a2a2c;
+  
+  --shadow: 0 2px 10px rgba(255, 255, 255, 0.03);
+  --shadow-lg: 0 20px 30px -10px rgba(0, 0, 0, 0.5);
+  --shadow-hover: 0 30px 40px -15px rgba(0, 0, 0, 0.7);
+  
+  --accent-color: #2997ff;
+  --accent-hover: #66b3ff;
+  --accent-light: #1a3447;
+}

@@ -1,0 +1,34 @@
+@media print {
+    .header,
+    .mobile-menu,
+    .cta,
+    .footer,
+    .hero-actions,
+    .theme-toggle {
+      display: none;
+    }
+  
+    body {
+      font-size: 12pt;
+      line-height: 1.4;
+      color: #000;
+      background: #fff;
+    }
+  
+    .section-title {
+      font-size: 18pt;
+    }
+  
+    .hero-title {
+      font-size: 24pt;
+    }
+  
+    a {
+      color: #000;
+      text-decoration: underline;
+    }
+  
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+  }

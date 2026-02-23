@@ -1,0 +1,16 @@
+/* Añade o ajusta en css/utilities/_spacing.css */
+.section {
+    padding: 6rem 0; /* Un estándar para todas las secciones */
+  }
+  
+  @media (max-width: 768px) {
+    .section {
+      padding: 4rem 0;
+    }
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem; /* Un poco más de padding lateral en móvil */
+  }

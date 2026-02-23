@@ -1,27 +1,27 @@
 /* SETTINGS */
-@import url('settings/_variables.css');
+@import url('settings/variables.css');
 
 /* GENERIC */
-@import url('generic/_reset.css');
+@import url('generic/reset.css');
 
 /* ELEMENTS */
-@import url('elements/_headings.css');
-@import url('elements/_links.css');
+@import url('elements/headings.css');
+@import url('elements/links.css');
 
 /* COMPONENTS */
-@import url('components/_buttons.css');
-@import url('components/_header.css');
-@import url('components/_hero.css');
-@import url('components/_benefits.css');
-@import url('components/_features.css');
-@import url('components/_pricing.css');
-@import url('components/_faq.css');
-@import url('components/_cta.css');
-@import url('components/_footer.css');
+@import url('components/buttons.css');
+@import url('components/header.css');
+@import url('components/hero.css');
+@import url('components/benefits.css');
+@import url('components/features.css');
+@import url('components/pricing.css');
+@import url('components/faq.css');
+@import url('components/cta.css');
+@import url('components/footer.css');
 
 /* UTILITIES */
-@import url('utilities/_accessibility.css');
-@import url('utilities/_animations.css');
-@import url('utilities/_responsive.css');
-@import url('utilities/_print.css');
-@import url('utilities/_theme.css');
+@import url('utilities/accessibility.css');
+@import url('utilities/animations.css');
+@import url('utilities/responsive.css');
+@import url('utilities/print.css');
+@import url('utilities/theme.css');

@@ -34,7 +34,7 @@
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
     <!-- Structured Data -->
@@ -43,15 +43,20 @@
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "Facstock",
-      "description": "Sistema de gestión de inventario y facturación electrónica para comercios y PYMEs de Argentina",
+      "description": "Sistema de gestion de inventario y facturacion electronica para comercios y PYMEs de Argentina",
       "url": "https://facstock.com",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
+      "brand": {
+        "@type": "Brand",
+        "name": "Facstock"
+      },
       "offers": {
         "@type": "Offer",
-        "price": "18000",
+        "price": "15000",
         "priceCurrency": "ARS",
-        "priceValidUntil": "2024-12-31"
+        "availability": "https://schema.org/InStock",
+        "url": "https://facstock.com/#precios"
       },
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -305,11 +310,11 @@
                     <p class="plan-description">Probá nuestro producto y ayudanos a mejorarlo</p>
                 </div>
                 <ul class="plan-features">
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Plan Pro ilimitado por 3 meses</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Plan Pro ilimitado por 7 dias</li>
                     <li><i class="fas fa-check" aria-hidden="true"></i> Soporte prioritario para feedback</li>
                 </ul>
                 <a href="https://front.facstock.com/" target="_blank">
-                    <button class="btn btn-outline btn-full" type="button">Crear cuenta tester</button>
+                    <button class="btn btn-outline btn-full" type="button">Elegir plan Free</button>
                 </a>
             </article>
 
@@ -319,7 +324,7 @@
                     <h3 class="plan-name">Básico</h3>
                     <p class="plan-subtitle">PARA EMPRENDEDORES</p>
                     <div class="plan-price">
-                        <span class="price">$20.000</span>
+                        <span class="price">$15.000</span>
                         <span class="period">+ IVA/mes</span>
                     </div>
                     <p class="plan-description">Ideal para kioscos, pequeños comercios y ferias</p>
@@ -327,7 +332,7 @@
                 <ul class="plan-features">
                     <li><i class="fas fa-check" aria-hidden="true"></i> Hasta <strong>1.000 productos</strong> en stock</li>
                     <li><i class="fas fa-check" aria-hidden="true"></i> Hasta <strong>500 facturas</strong> por mes</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>2 usuarios</strong> incluidos</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>1 usuario</strong></li>
                     <li><i class="fas fa-check" aria-hidden="true"></i> <strong>1 sucursal</strong></li>
                    <!-- <li><i class="fas fa-check" aria-hidden="true"></i> Facturación electrónica AFIP</li>-->
                     <li><i class="fas fa-check" aria-hidden="true"></i> Reportes básicos de stock</li>
@@ -373,71 +378,6 @@
         </div>
     </div>
 </section>
-
-        <!-- Testimonials Section 
-        <section class="testimonials" aria-labelledby="testimonials-title">
-            <div class="container">
-                <div class="section-header">
-                    <h2 id="testimonials-title" class="section-title">Clientes Satisfechos</h2>
-                    <p class="section-subtitle">
-                        Descubre cómo Facstock está ayudando a negocios como el tuyo a crecer y prosperar.
-                    </p>
-                </div>
-                <div class="testimonials-grid">
-                    <article class="testimonial-card">
-                        <div class="testimonial-rating" aria-label="5 estrellas">
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                        </div>
-                        <blockquote class="testimonial-content">
-                            "Facstock me cambió la vida. Antes perdía horas haciendo facturas a mano, 
-                            ahora todo es automático y puedo enfocarme en atender a mis clientes."
-                        </blockquote>
-                        <div class="testimonial-author">
-                            <p class="author-name">Juan Pérez</p>
-                            <p class="author-business">Kiosco 'El Rincón'</p>
-                        </div>
-                    </article>
-                    <article class="testimonial-card">
-                        <div class="testimonial-rating" aria-label="5 estrellas">
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                        </div>
-                        <blockquote class="testimonial-content">
-                            "El control de stock es increíble. Ya no me quedo sin mercadería importante 
-                            y los reportes me ayudan a saber qué productos vender más."
-                        </blockquote>
-                        <div class="testimonial-author">
-                            <p class="author-name">María González</p>
-                            <p class="author-business">Boutique 'Estilo Único'</p>
-                        </div>
-                    </article>
-                    <article class="testimonial-card">
-                        <div class="testimonial-rating" aria-label="5 estrellas">
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                        </div>
-                        <blockquote class="testimonial-content">
-                            "La integración con AFIP es perfecta. Mis facturas salen automáticamente 
-                            y nunca más tuve problemas con la AFIP. Súper recomendado."
-                        </blockquote>
-                        <div class="testimonial-author">
-                            <p class="author-name">Carlos Rodríguez</p>
-                            <p class="author-business">Ferretería 'Todo Hogar'</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>-->
 
         <!-- FAQ Section -->
         <section id="faq" class="faq" aria-labelledby="faq-title">
@@ -546,6 +486,7 @@
         </div>
     </div>
 </section>
+
     </main>
 
     <!-- Footer -->
@@ -566,7 +507,7 @@
                              <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>-->
                         <a href="https://www.instagram.com/facstock_/" target="_blank" class="social-link" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                        
-                        <a href="https://www.linkedin.com/in/tomas-barros-a43a53222?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/company/facstock/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="footer-links">
@@ -576,21 +517,22 @@
                         <li><a href="#precios" class="footer-link">Planes y Precios</a></li>
                         <li><a href="#faq" class="footer-link">Preguntas Frecuentes</a></li>
                         <li><a href="#contacto" class="footer-link">Contacto</a></li>
+                        <li>   <a href="https://maps.app.goo.gl/HWqXecHLHPqGzmUv5" class="footer-link" target="_blank">Ubicacion</a></li>
                     </ul>
                 </div>
                 <div class="footer-legal">
                     <h3 class="footer-title">Legal</h3>
                     <ul class="footer-list">
                         <li><a href="./terminos-y-condiciones.html" class="footer-link">Términos y Condiciones</a></li>
-                        <li><a href="./politica-de-privacidad.html" class="footer-link">Política de Privacidad</a></li>
-                        <li><a href="./politica-de-cookies.html" class="footer-link">Política de Cookies</a></li>
+                        <li><a href="./politica-de-privacidad.html" class="footer-link">Políticas de Privacidad</a></li>
+                        <li><a href="./politica-de-cookies.html" class="footer-link">Políticas de Cookies</a></li>
                         <li><a href="https://wa.me/5493834901162?text=¡Hola%20Facstock estoy por el soporte tecnico" target="_blank" class="footer-link">Soporte Técnico</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Facstock. Todos los derechos reservados. Hecho con ❤️ para emprendedores por
-                    <a href="https://www.linkedin.com/in/tomas-barros-a43a53222?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank"  >Facstock</a>
+                    <a href="https://www.linkedin.com/company/facstock/" target="_blank"  >Facstock</a>
                 </p>
             </div>
         </div>

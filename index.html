@@ -3,26 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de inventario y facturacion electronica</title>
-    <meta name="description" content="Facstock es el sistema de gestión de inventario y facturación electrónica más completo para comercios y PYMEs de Argentina. Compatible con AFIP-ARCA. Controla tu stock, emite facturas y toma decisiones inteligentes.">
-    <meta name="keywords" content="sistema facturación argentina, software inventario PyMEs, AFIP ARCA, gestión stock, facturación electrónica, control inventario, software comercios">
+    <title>Facstock | Software de inventario y facturación electrónica para PYMEs</title>
+    <meta name="description" content="Facstock es el software argentino para comercios y PYMEs que controla stock, gestiona inventario y emite facturas electrónicas AFIP con facilidad.">
+    <meta name="keywords" content="Facstock, software de inventario, facturación electrónica, AFIP, PYMEs Argentina, control de stock, punto de venta, gestión de inventario, venta online">
     <meta name="author" content="Facstock">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://facstock.com">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="canonical" href="https://facstock.com/">
     
     <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="Facstock">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://facstock.com">
-    <meta property="og:title" content="Facstock - Sistema de Gestión de Inventario y Facturación Electrónica">
-    <meta property="og:description" content="El sistema más completo para comercios y PYMEs argentinas. Compatible con AFIP-ARCA.">
-    <meta property="og:image" content="https://facstock.com/images/facstock-logo.ico">
+    <meta property="og:url" content="https://facstock.com/">
+    <meta property="og:title" content="Facstock | Software de inventario y facturación electrónica para PYMEs">
+    <meta property="og:description" content="Software para comercios y PYMEs argentinas que gestiona stock y facturación electrónica AFIP en un solo lugar.">
+    <meta property="og:image" content="https://facstock.com/images/facstock-logo.webp">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://facstock.com">
-    <meta property="twitter:title" content="Facstock - Sistema de Gestión de Inventario y Facturación Electrónica">
-    <meta property="twitter:description" content="El sistema más completo para comercios y PYMEs argentinas. Compatible con AFIP-ARCA.">
-    <meta property="twitter:image" content="https://facstock.com/images/facstock-logo.ico">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://facstock.com/">
+    <meta name="twitter:title" content="Facstock | Software de inventario y facturación electrónica para PYMEs">
+    <meta name="twitter:description" content="Software para comercios y PYMEs argentinas que gestiona stock y facturación electrónica AFIP en un solo lugar.">
+    <meta name="twitter:image" content="https://facstock.com/images/facstock-logo.webp">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://facstock.com/",
+      "name": "Facstock",
+      "description": "Software de inventario y facturación electrónica para comercios y PYMEs argentinas.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Facstock",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://facstock.com/images/facstock-logo.webp"
+        },
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61578581776862",
+          "https://www.instagram.com/facstock_/",
+          "https://www.linkedin.com/company/facstock/"
+        ]
+      }
+    }
+    </script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/ico" sizes="32x32" href="images/facstock-logo.ico">
@@ -36,6 +62,92 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/main.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .blog-teaser {
+            padding: 4rem 0 2rem;
+            background: #f8fafc;
+        }
+
+        .blog-teaser .section-header {
+            text-align: left;
+        }
+
+        .blog-teaser-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .blog-card {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 24px;
+            padding: 1.75rem;
+        }
+
+        .blog-card img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 18px;
+        }
+
+        .blog-card-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .blog-card .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.5rem 0.95rem;
+            border-radius: 999px;
+            background: #e2e8f0;
+            color: #0f172a;
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .blog-card-title {
+            margin: 0;
+            font-size: clamp(1.5rem, 2.2vw, 2rem);
+            line-height: 1.25;
+            color: #111827;
+        }
+
+        .blog-card-text {
+            margin: 0;
+            color: #475569;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        .blog-card-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .blog-card .btn-primary,
+        .blog-card .btn-outline {
+            min-width: 160px;
+        }
+
+        @media (min-width: 768px) {
+            .blog-card {
+                grid-template-columns: 420px 1fr;
+                align-items: center;
+            }
+        }
+    </style>
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -88,6 +200,7 @@
                     <a href="#precios" class="nav-link">Planes y Precios</a>
                     <a href="#faq" class="nav-link">Preguntas Frecuentes</a>
                     <a href="#contacto" class="nav-link">Contacto</a>
+                    <a href="blog/blog.html" class="nav-link">Blog</a>
                 </nav>
 
                 <!-- Desktop Actions -->
@@ -115,6 +228,7 @@
                 <a href="#precios" class="mobile-nav-link">Planes y Precios</a>
                 <a href="#faq" class="mobile-nav-link">Preguntas Frecuentes</a>
                 <a href="#contacto" class="mobile-nav-link">Contacto</a>
+                <a href="blog/blog.html" class="mobile-nav-link">Blog</a>
                 <div class="mobile-menu-footer">
                     <div class="theme-toggle-mobile">
                         <span>Tema</span>
@@ -150,7 +264,11 @@
                             Probalo Gratis!
                             <i class="fas fa-arrow-right" aria-hidden="true"></i>
                         </button></a>
-                        <!--<a href="" target="_blank"><button class="btn btn-outline btn-large" type="button"> Solicitar Demo Gratuita</button></a>-->
+                        <a href="blog/blog.html">
+                        <button class="btn btn-outline btn-large" type="button">
+                            Leer Blog
+                            <i class="fas fa-book-open" aria-hidden="true"></i>
+                        </button></a>
                     </div>
                     <div class="hero-features">
                         <div class="hero-feature">
@@ -169,6 +287,8 @@
                 </div>
             </div>
         </section>
+
+      
 
         <!-- Benefits Section -->
         <section class="benefits" aria-labelledby="benefits-title">
@@ -232,7 +352,7 @@
                         </div>
                         <ul class="feature-list">
                             <li>Gestion de stock en tiempo real</li>
-                            <li>Migracion de productos <strong>tienda nube</strong></li>
+                            <li>Migracion de productos</li>
                             <li>Sucursales Multiples</li>
                             <li>Aviso stock bajo</li>
                            <!-- <li>Múltiples depósitos/sucursales</li>-->
@@ -251,7 +371,7 @@
                            <!-- <li>Personalización de comprobantes</li>
                             <li>Gestión de clientes y proveedores</li>-->
                             <li>Integración con AFIP</li>
-                            <li>Generacion de tikets</li>
+                            <li>Generacion de tikets internos</li>
                         </ul>
                     </article>
                     <article class="feature-card">
@@ -299,74 +419,97 @@
         </div>
         
         <div class="pricing-grid">
-            <!-- Plan Free / Tester -->
+            <!-- Plan Free -->
             <article class="pricing-card">
                 <div class="pricing-header">
                     <h3 class="plan-name">Free</h3>
-                    <p class="plan-subtitle">BETA TESTER</p>
                     <div class="plan-price">
                         <span class="price">$0</span>
+                        <span class="period">/único</span>
                     </div>
-                    <p class="plan-description">Probá nuestro producto y ayudanos a mejorarlo</p>
                 </div>
                 <ul class="plan-features">
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Plan Pro ilimitado por 7 dias</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Soporte prioritario para feedback</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>10 Productos</strong></li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>3 Facturas AFIP</strong>/mes</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>10 Tickets</strong>/mes</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>10 Pedidos</strong>/mes</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>1 Usuario</strong></li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>1 Punto de Venta</strong></li>
                 </ul>
                 <a href="https://front.facstock.com/" target="_blank">
-                    <button class="btn btn-outline btn-full" type="button">Elegir plan Free</button>
+                    <button class="btn btn-outline btn-full" type="button">Seleccionar Plan</button>
                 </a>
             </article>
 
             <!-- Plan Básico -->
             <article class="pricing-card">
+                
                 <div class="pricing-header">
                     <h3 class="plan-name">Básico</h3>
-                    <p class="plan-subtitle">PARA EMPRENDEDORES</p>
                     <div class="plan-price">
-                        <span class="price">$10.000</span>
-                        <span class="period">+ IVA/mes</span>
+                        <span class="price">$6000</span>
+                        <span class="period">/mes</span>
                     </div>
-                    <p class="plan-description">Ideal para kioscos, pequeños comercios y ferias</p>
                 </div>
                 <ul class="plan-features">
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Hasta <strong>5.000 productos</strong> en stock</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Hasta <strong>500 facturas</strong> por mes</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>1 usuario</strong></li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>1 sucursal</strong></li>
-                   <!-- <li><i class="fas fa-check" aria-hidden="true"></i> Facturación electrónica AFIP</li>-->
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Reportes básicos de stock</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Soporte por WhatsApp</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>300 Productos</strong></li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>350 Facturas AFIP</strong>/mes</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>500 Tickets</strong>/mes</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>500 Pedidos</strong>/mes</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>2 Usuarios</strong></li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>2 Puntos de Venta</strong></li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Exportación Excel</li>
                 </ul>
-                <a href="https://wa.me/5493834901162?text=¡Hola%20Facstock!%20Quiero%20contratar%20el%20plan%20Básico" target="_blank">
-                    <button class="btn btn-outline btn-full" type="button">Elegir Plan Básico</button>
+                <a href="https://front.facstock.com/" target="_blank">
+                    <button class="btn btn-outline btn-full" type="button">Seleccionar Plan</button>
                 </a>
             </article>
 
-            <!-- Plan Pro -->
-            <article class="pricing-card popular">
-                <div class="popular-badge">MÁS ELEGIDO</div>
+            <!-- Plan Profesional -->
+            <article class="pricing-card">
                 <div class="pricing-header">
-                    <h3 class="plan-name">Pro</h3>
-                    <p class="plan-subtitle">PARA NEGOCIOS EN CRECIMIENTO</p>
+                     <div class="popular-badge">MÁS ELEGIDO</div>
+                    <h3 class="plan-name">Profesional</h3>
                     <div class="plan-price">
-                        <span class="price">$25.000</span>
-                        <span class="period">+ IVA/mes</span>
+                        <span class="price">$15.000</span>
+                        <span class="period">/mes</span>
                     </div>
-                    <p class="plan-description">Minimercados, ferreterías, tiendas de tecnología</p>
                 </div>
                 <ul class="plan-features">
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Hasta <strong>10.000 productos</strong> en stock</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Hasta <strong>1.500 facturas</strong> por mes</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>5 usuarios</strong> incluidos</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Hasta <strong>3 sucursales</strong></li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Facturación electrónica AFIP</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Múltiples puntos de venta</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Soporte prioritario 24/7</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Exportación de datos</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>5000 Productos</strong></li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>10000 Facturas AFIP</strong>/mes</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>10000 Tickets</strong>/mes</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>10000 Pedidos</strong>/mes</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>10 Usuarios</strong></li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>5 Puntos de Venta</strong></li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Exportación Excel</li>
                 </ul>
-                <a href="https://wa.me/5493834901162?text=¡Hola%20Facstock!%20Quiero%20contratar%20el%20plan%20Pro" target="_blank">
-                    <button class="btn btn-primary btn-full" type="button">Elegir Plan Pro</button>
+                <a href="https://front.facstock.com/" target="_blank">
+                    <button class="btn btn-outline btn-full" type="button">Seleccionar Plan</button>
+                </a>
+            </article>
+
+            <!-- Plan Premium -->
+            <article class="pricing-card popular">
+               
+                <div class="pricing-header">
+                    <h3 class="plan-name">Premium</h3>
+                    <div class="plan-price">
+                        <span class="price">$50.000</span>
+                        <span class="period">/mes</span>
+                    </div>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>Productos ilimitados</strong></li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>Facturas AFIP ilimitadas</strong></li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>99999 Tickets</strong>/mes</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>Pedidos ilimitados</strong></li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>999999 Usuarios</strong></li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> <strong>999999 Puntos de Venta</strong></li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Exportación Excel</li>
+                </ul>
+                <a href="https://front.facstock.com/" target="_blank">
+                    <button class="btn btn-primary btn-full" type="button">Seleccionar Plan</button>
                 </a>
             </article>
         </div>
@@ -503,10 +646,8 @@
                         argentinas. Simplifica tu negocio y potencia tus ventas.
                     </p>
                     <div class="footer-social">
-                        <!--<a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-                             <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>-->
+                        <a href="https://www.facebook.com/profile.php?id=61578581776862" target="_blank" class="social-link" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
                         <a href="https://www.instagram.com/facstock_/" target="_blank" class="social-link" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                       
                         <a href="https://www.linkedin.com/company/facstock/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
                     </div>
                 </div>
@@ -517,6 +658,7 @@
                         <li><a href="#precios" class="footer-link">Planes y Precios</a></li>
                         <li><a href="#faq" class="footer-link">Preguntas Frecuentes</a></li>
                         <li><a href="#contacto" class="footer-link">Contacto</a></li>
+                        <li><a href="blog/blog.html" class="footer-link">Blog</a></li>
                         <li>   <a href="https://maps.app.goo.gl/HWqXecHLHPqGzmUv5" class="footer-link" target="_blank">Ubicacion</a></li>
                     </ul>
                 </div>
